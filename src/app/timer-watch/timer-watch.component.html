@@ -1,0 +1,19 @@
+
+
+ <div class="title col-12 bg-primary d-flex justify-content-center  ">
+ <h1 class="display-1">StopWatch!</h1>
+</div>
+
+<div class="time-container d-flex justify-content-center ">
+ <h1 class=" timer display-2  bg-info">{{(time.hours).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false}) +':'+(time.minutes).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+':'+(time.seconds).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+':'+(time.milliSeconds).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}}</h1>
+</div>
+
+<div class="button-container d-flex justify-content-center">
+    <div class="button-options">
+        <button type="button" class="btn btn-success m-2 "(click)="handleCounter('start')">Start</button>
+        <button type="button" class="btn btn-danger m-2"(click)="handleCounter('stop')">Stop</button>
+        <button type="button" class="btn btn-primary m-2"(click)="handleCounter('reset')">Reset</button>  
+        </div>
+        
+</div>
+
